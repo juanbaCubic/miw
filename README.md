@@ -108,3 +108,7 @@ We then obtain the following results:
     }
 }
 ```
+
+## Precision calculus
+
+It is possible to obtain the precision calculated as the average number of fields correctly returned. In order to do that, you need to run ```testing_OCR.py```
