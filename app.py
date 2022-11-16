@@ -148,12 +148,12 @@ def fetch_results():
                        "counter_renting": get_particular_data(analysis_results_2, 'Alquiler').strip(),
                        "invoice_total": get_from_expenses(analysis_results, 'TOTAL').strip(),
                        "CUPS": get_particular_data(analysis_results_2, 'CUPS').strip(),
-                       "owner": get_particular_data(analysis_results_2, 'Titular').strip(),
+                       "owner": get_particular_data(analysis_results_2, 'itular').strip(),
                        "CIF/NIF": get_particular_data(analysis_results_2, 'NIF').strip(),
                        "address": get_from_expenses(analysis_results, 'ADDRESS').strip(),
                        "installation_address": get_particular_data(analysis_results_2, 'suministro').strip()
                       }
 
             return {"JobId":analysis_job_id, "analysis_results": fields}, 200
-        except:
+        except IndentationError:
             return({'Error': 'Not identified'})
